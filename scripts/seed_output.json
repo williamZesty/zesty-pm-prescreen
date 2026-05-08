@@ -1,0 +1,1155 @@
+{
+  "properties": [
+    {
+      "property_id": 1,
+      "address": "509 Elm Way, Los Angeles",
+      "state": "CA",
+      "year_built": 1951,
+      "roof_age_years": 15,
+      "square_feet": 1371
+    },
+    {
+      "property_id": 2,
+      "address": "9035 Oak St, Los Angeles",
+      "state": "CA",
+      "year_built": 1995,
+      "roof_age_years": 28,
+      "square_feet": 930
+    },
+    {
+      "property_id": 3,
+      "address": "1635 Cedar Blvd, Los Angeles",
+      "state": "CA",
+      "year_built": 1949,
+      "roof_age_years": 33,
+      "square_feet": 3265
+    },
+    {
+      "property_id": 4,
+      "address": "9295 Cedar Blvd, Los Angeles",
+      "state": "CA",
+      "year_built": 2011,
+      "roof_age_years": 35,
+      "square_feet": 2518
+    },
+    {
+      "property_id": 5,
+      "address": "7459 Hickory Trail, Miami",
+      "state": "FL",
+      "year_built": 1955,
+      "roof_age_years": 1,
+      "square_feet": 3908
+    },
+    {
+      "property_id": 6,
+      "address": "7024 Birch Ct, Miami",
+      "state": "FL",
+      "year_built": 1955,
+      "roof_age_years": 10,
+      "square_feet": 1681
+    },
+    {
+      "property_id": 7,
+      "address": "1774 Oak St, Austin",
+      "state": "TX",
+      "year_built": 1968,
+      "roof_age_years": 7,
+      "square_feet": 2270
+    },
+    {
+      "property_id": 8,
+      "address": "9991 Elm Way, Austin",
+      "state": "TX",
+      "year_built": 1925,
+      "roof_age_years": 30,
+      "square_feet": 2996
+    },
+    {
+      "property_id": 9,
+      "address": "6301 Oak St, Los Angeles",
+      "state": "CA",
+      "year_built": 1990,
+      "roof_age_years": 19,
+      "square_feet": 4197
+    },
+    {
+      "property_id": 10,
+      "address": "6025 Hickory Trail, Denver",
+      "state": "CO",
+      "year_built": 1944,
+      "roof_age_years": 5,
+      "square_feet": 987
+    },
+    {
+      "property_id": 11,
+      "address": "4841 Oak St, Miami",
+      "state": "FL",
+      "year_built": 1949,
+      "roof_age_years": 7,
+      "square_feet": 2356
+    },
+    {
+      "property_id": 12,
+      "address": "7528 Birch Ct, Austin",
+      "state": "TX",
+      "year_built": 1940,
+      "roof_age_years": 24,
+      "square_feet": 2255
+    },
+    {
+      "property_id": 13,
+      "address": "4474 Oak St, Miami",
+      "state": "FL",
+      "year_built": 1997,
+      "roof_age_years": 11,
+      "square_feet": 2987
+    },
+    {
+      "property_id": 14,
+      "address": "2777 Willow Dr, Miami",
+      "state": "FL",
+      "year_built": 1968,
+      "roof_age_years": 18,
+      "square_feet": 3421
+    },
+    {
+      "property_id": 15,
+      "address": "3698 Birch Ct, Denver",
+      "state": "CO",
+      "year_built": 2018,
+      "roof_age_years": 4,
+      "square_feet": 1738
+    },
+    {
+      "property_id": 16,
+      "address": "5268 Spruce Ln, Los Angeles",
+      "state": "CA",
+      "year_built": 1954,
+      "roof_age_years": 5,
+      "square_feet": 1664
+    },
+    {
+      "property_id": 17,
+      "address": "5255 Cedar Blvd, Denver",
+      "state": "CO",
+      "year_built": 2003,
+      "roof_age_years": 32,
+      "square_feet": 2420
+    },
+    {
+      "property_id": 18,
+      "address": "2440 Elm Way, Buffalo",
+      "state": "NY",
+      "year_built": 1937,
+      "roof_age_years": 16,
+      "square_feet": 3851
+    },
+    {
+      "property_id": 19,
+      "address": "8930 Elm Way, Denver",
+      "state": "CO",
+      "year_built": 2015,
+      "roof_age_years": 28,
+      "square_feet": 4477
+    },
+    {
+      "property_id": 20,
+      "address": "6643 Birch Ct, Denver",
+      "state": "CO",
+      "year_built": 1948,
+      "roof_age_years": 9,
+      "square_feet": 2887
+    },
+    {
+      "property_id": 21,
+      "address": "1589 Maple Ave, Buffalo",
+      "state": "NY",
+      "year_built": 1934,
+      "roof_age_years": 10,
+      "square_feet": 3370
+    },
+    {
+      "property_id": 22,
+      "address": "7016 Hickory Trail, Miami",
+      "state": "FL",
+      "year_built": 1928,
+      "roof_age_years": 25,
+      "square_feet": 2363
+    },
+    {
+      "property_id": 23,
+      "address": "7768 Ash Pl, Denver",
+      "state": "CO",
+      "year_built": 1952,
+      "roof_age_years": 1,
+      "square_feet": 3586
+    },
+    {
+      "property_id": 24,
+      "address": "8897 Elm Way, Los Angeles",
+      "state": "CA",
+      "year_built": 2018,
+      "roof_age_years": 22,
+      "square_feet": 1256
+    },
+    {
+      "property_id": 25,
+      "address": "7223 Pine Rd, Austin",
+      "state": "TX",
+      "year_built": 1978,
+      "roof_age_years": 1,
+      "square_feet": 3757
+    },
+    {
+      "property_id": 26,
+      "address": "8301 Pine Rd, Austin",
+      "state": "TX",
+      "year_built": 1984,
+      "roof_age_years": 7,
+      "square_feet": 4365
+    },
+    {
+      "property_id": 27,
+      "address": "8417 Hickory Trail, Austin",
+      "state": "TX",
+      "year_built": 1945,
+      "roof_age_years": 10,
+      "square_feet": 2331
+    },
+    {
+      "property_id": 28,
+      "address": "8937 Ash Pl, Miami",
+      "state": "FL",
+      "year_built": 1920,
+      "roof_age_years": 21,
+      "square_feet": 2801
+    },
+    {
+      "property_id": 29,
+      "address": "1932 Birch Ct, Los Angeles",
+      "state": "CA",
+      "year_built": 1959,
+      "roof_age_years": 16,
+      "square_feet": 1037
+    },
+    {
+      "property_id": 30,
+      "address": "9395 Oak St, Miami",
+      "state": "FL",
+      "year_built": 1930,
+      "roof_age_years": 32,
+      "square_feet": 4142
+    }
+  ],
+  "policies": [
+    {
+      "policy_id": 1,
+      "property_id": 1,
+      "customer_name": "Taylor Flores",
+      "annual_premium": 1971.95,
+      "coverage_amount": 331869.0,
+      "start_date": "2022-05-12"
+    },
+    {
+      "policy_id": 2,
+      "property_id": 2,
+      "customer_name": "Micah Jackson",
+      "annual_premium": 2883.07,
+      "coverage_amount": 373148.0,
+      "start_date": "2022-09-29"
+    },
+    {
+      "policy_id": 3,
+      "property_id": 3,
+      "customer_name": "Finley Nelson",
+      "annual_premium": 2134.51,
+      "coverage_amount": 422086.0,
+      "start_date": "2023-07-07"
+    },
+    {
+      "policy_id": 4,
+      "property_id": 4,
+      "customer_name": "Robin Hill",
+      "annual_premium": 2317.71,
+      "coverage_amount": 947581.0,
+      "start_date": "2022-11-16"
+    },
+    {
+      "policy_id": 5,
+      "property_id": 5,
+      "customer_name": "Hayden Torres",
+      "annual_premium": 2229.73,
+      "coverage_amount": 659381.0,
+      "start_date": "2023-06-14"
+    },
+    {
+      "policy_id": 6,
+      "property_id": 6,
+      "customer_name": "Rowan Garcia",
+      "annual_premium": 1345.39,
+      "coverage_amount": 267136.0,
+      "start_date": "2022-12-13"
+    },
+    {
+      "policy_id": 7,
+      "property_id": 7,
+      "customer_name": "Alex Gonzalez",
+      "annual_premium": 2018.63,
+      "coverage_amount": 817024.0,
+      "start_date": "2022-08-14"
+    },
+    {
+      "policy_id": 8,
+      "property_id": 8,
+      "customer_name": "Alex Khan",
+      "annual_premium": 2357.25,
+      "coverage_amount": 261733.0,
+      "start_date": "2022-08-23"
+    },
+    {
+      "policy_id": 9,
+      "property_id": 9,
+      "customer_name": "Taylor Baker",
+      "annual_premium": 869.11,
+      "coverage_amount": 546479.0,
+      "start_date": "2022-03-14"
+    },
+    {
+      "policy_id": 10,
+      "property_id": 10,
+      "customer_name": "Finley Davis",
+      "annual_premium": 1412.65,
+      "coverage_amount": 708993.0,
+      "start_date": "2022-08-08"
+    },
+    {
+      "policy_id": 11,
+      "property_id": 11,
+      "customer_name": "Harper Smith",
+      "annual_premium": 2391.38,
+      "coverage_amount": 798782.0,
+      "start_date": "2023-08-14"
+    },
+    {
+      "policy_id": 12,
+      "property_id": 12,
+      "customer_name": "Emerson Davis",
+      "annual_premium": 2526.16,
+      "coverage_amount": 626833.0,
+      "start_date": "2022-07-14"
+    },
+    {
+      "policy_id": 13,
+      "property_id": 13,
+      "customer_name": "Morgan Garcia",
+      "annual_premium": 2249.76,
+      "coverage_amount": 571507.0,
+      "start_date": "2023-03-10"
+    },
+    {
+      "policy_id": 14,
+      "property_id": 14,
+      "customer_name": "Parker Moore",
+      "annual_premium": 2700.44,
+      "coverage_amount": 256802.0,
+      "start_date": "2023-11-21"
+    },
+    {
+      "policy_id": 15,
+      "property_id": 15,
+      "customer_name": "Logan Scott",
+      "annual_premium": 1016.52,
+      "coverage_amount": 622179.0,
+      "start_date": "2024-01-16"
+    },
+    {
+      "policy_id": 16,
+      "property_id": 16,
+      "customer_name": "Reese Green",
+      "annual_premium": 2695.68,
+      "coverage_amount": 460735.0,
+      "start_date": "2022-07-16"
+    },
+    {
+      "policy_id": 17,
+      "property_id": 17,
+      "customer_name": "Avery Lopez",
+      "annual_premium": 1786.95,
+      "coverage_amount": 642374.0,
+      "start_date": "2022-07-07"
+    },
+    {
+      "policy_id": 18,
+      "property_id": 18,
+      "customer_name": "Sage Moore",
+      "annual_premium": 1349.57,
+      "coverage_amount": 279046.0,
+      "start_date": "2023-03-30"
+    },
+    {
+      "policy_id": 19,
+      "property_id": 19,
+      "customer_name": "Sam Nelson",
+      "annual_premium": 2683.13,
+      "coverage_amount": 302664.0,
+      "start_date": "2022-02-21"
+    },
+    {
+      "policy_id": 20,
+      "property_id": 20,
+      "customer_name": "Logan Lopez",
+      "annual_premium": 2639.26,
+      "coverage_amount": 297793.0,
+      "start_date": "2024-02-11"
+    },
+    {
+      "policy_id": 21,
+      "property_id": 21,
+      "customer_name": "Vic Davis",
+      "annual_premium": 1165.88,
+      "coverage_amount": 709231.0,
+      "start_date": "2023-05-08"
+    },
+    {
+      "policy_id": 22,
+      "property_id": 22,
+      "customer_name": "Avery Nelson",
+      "annual_premium": 1682.29,
+      "coverage_amount": 261483.0,
+      "start_date": "2022-06-18"
+    },
+    {
+      "policy_id": 23,
+      "property_id": 23,
+      "customer_name": "Hayden Nguyen",
+      "annual_premium": 2967.68,
+      "coverage_amount": 478085.0,
+      "start_date": "2024-03-13"
+    },
+    {
+      "policy_id": 24,
+      "property_id": 24,
+      "customer_name": "Sam Moore",
+      "annual_premium": 1427.55,
+      "coverage_amount": 930429.0,
+      "start_date": "2024-01-19"
+    },
+    {
+      "policy_id": 25,
+      "property_id": 25,
+      "customer_name": "Sam Lopez",
+      "annual_premium": 2256.12,
+      "coverage_amount": 710311.0,
+      "start_date": "2022-06-08"
+    },
+    {
+      "policy_id": 26,
+      "property_id": 26,
+      "customer_name": "Avery Martinez",
+      "annual_premium": 1278.94,
+      "coverage_amount": 261324.0,
+      "start_date": "2023-08-17"
+    },
+    {
+      "policy_id": 27,
+      "property_id": 27,
+      "customer_name": "Pat Lopez",
+      "annual_premium": 934.11,
+      "coverage_amount": 528838.0,
+      "start_date": "2022-02-28"
+    },
+    {
+      "policy_id": 28,
+      "property_id": 28,
+      "customer_name": "Jordan Gonzalez",
+      "annual_premium": 1848.93,
+      "coverage_amount": 756926.0,
+      "start_date": "2022-06-11"
+    },
+    {
+      "policy_id": 29,
+      "property_id": 29,
+      "customer_name": "Jordan Martin",
+      "annual_premium": 976.25,
+      "coverage_amount": 394851.0,
+      "start_date": "2022-03-12"
+    },
+    {
+      "policy_id": 30,
+      "property_id": 30,
+      "customer_name": "Kendall Khan",
+      "annual_premium": 2285.47,
+      "coverage_amount": 446629.0,
+      "start_date": "2023-02-18"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": 1,
+      "policy_id": 4,
+      "claim_date": "2024-05-19",
+      "claim_amount": 29156.49,
+      "claim_type": "Roof",
+      "status": "Open"
+    },
+    {
+      "claim_id": 2,
+      "policy_id": 14,
+      "claim_date": "2025-12-06",
+      "claim_amount": 16160.31,
+      "claim_type": "Fire",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 3,
+      "policy_id": 22,
+      "claim_date": "2024-10-05",
+      "claim_amount": 12314.95,
+      "claim_type": "Wind",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 4,
+      "policy_id": 22,
+      "claim_date": "2024-09-06",
+      "claim_amount": 23132.62,
+      "claim_type": "Roof",
+      "status": "Open"
+    },
+    {
+      "claim_id": 5,
+      "policy_id": 15,
+      "claim_date": "2023-07-24",
+      "claim_amount": 4126.41,
+      "claim_type": "Water",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 6,
+      "policy_id": 5,
+      "claim_date": "2024-12-15",
+      "claim_amount": 44102.78,
+      "claim_type": "Water",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 7,
+      "policy_id": 10,
+      "claim_date": "2023-11-20",
+      "claim_amount": 22190.14,
+      "claim_type": "Theft",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 8,
+      "policy_id": 20,
+      "claim_date": "2025-12-19",
+      "claim_amount": 887.24,
+      "claim_type": "Theft",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 9,
+      "policy_id": 30,
+      "claim_date": "2023-08-01",
+      "claim_amount": 46977.04,
+      "claim_type": "Water",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 10,
+      "policy_id": 4,
+      "claim_date": "2023-08-08",
+      "claim_amount": 37249.63,
+      "claim_type": "Water",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 11,
+      "policy_id": 10,
+      "claim_date": "2024-03-07",
+      "claim_amount": 36021.8,
+      "claim_type": "Water",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 12,
+      "policy_id": 17,
+      "claim_date": "2025-09-27",
+      "claim_amount": 12930.5,
+      "claim_type": "Roof",
+      "status": "Open"
+    },
+    {
+      "claim_id": 13,
+      "policy_id": 21,
+      "claim_date": "2025-05-17",
+      "claim_amount": 41552.73,
+      "claim_type": "Roof",
+      "status": "Open"
+    },
+    {
+      "claim_id": 14,
+      "policy_id": 11,
+      "claim_date": "2023-09-25",
+      "claim_amount": 32037.11,
+      "claim_type": "Fire",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 15,
+      "policy_id": 24,
+      "claim_date": "2025-06-23",
+      "claim_amount": 27808.18,
+      "claim_type": "Wind",
+      "status": "Open"
+    },
+    {
+      "claim_id": 16,
+      "policy_id": 4,
+      "claim_date": "2023-06-04",
+      "claim_amount": 47280.02,
+      "claim_type": "Water",
+      "status": "Open"
+    },
+    {
+      "claim_id": 17,
+      "policy_id": 27,
+      "claim_date": "2025-01-26",
+      "claim_amount": 29334.22,
+      "claim_type": "Water",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 18,
+      "policy_id": 5,
+      "claim_date": "2023-03-27",
+      "claim_amount": 15758.79,
+      "claim_type": "Roof",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 19,
+      "policy_id": 7,
+      "claim_date": "2024-05-26",
+      "claim_amount": 33513.2,
+      "claim_type": "Fire",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 20,
+      "policy_id": 20,
+      "claim_date": "2023-11-13",
+      "claim_amount": 46325.31,
+      "claim_type": "Water",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 21,
+      "policy_id": 26,
+      "claim_date": "2023-12-29",
+      "claim_amount": 44130.1,
+      "claim_type": "Roof",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 22,
+      "policy_id": 24,
+      "claim_date": "2024-11-11",
+      "claim_amount": 39228.13,
+      "claim_type": "Wind",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 23,
+      "policy_id": 9,
+      "claim_date": "2023-11-23",
+      "claim_amount": 39475.04,
+      "claim_type": "Roof",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 24,
+      "policy_id": 28,
+      "claim_date": "2023-03-21",
+      "claim_amount": 43000.37,
+      "claim_type": "Water",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 25,
+      "policy_id": 27,
+      "claim_date": "2025-07-31",
+      "claim_amount": 17808.09,
+      "claim_type": "Water",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 26,
+      "policy_id": 1,
+      "claim_date": "2024-01-31",
+      "claim_amount": 20224.07,
+      "claim_type": "Fire",
+      "status": "Open"
+    },
+    {
+      "claim_id": 27,
+      "policy_id": 25,
+      "claim_date": "2024-07-25",
+      "claim_amount": 17881.73,
+      "claim_type": "Theft",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 28,
+      "policy_id": 22,
+      "claim_date": "2024-11-09",
+      "claim_amount": 46992.24,
+      "claim_type": "Roof",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 29,
+      "policy_id": 6,
+      "claim_date": "2024-06-27",
+      "claim_amount": 2393.73,
+      "claim_type": "Theft",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 30,
+      "policy_id": 12,
+      "claim_date": "2024-10-04",
+      "claim_amount": 22101.5,
+      "claim_type": "Theft",
+      "status": "Open"
+    },
+    {
+      "claim_id": 31,
+      "policy_id": 13,
+      "claim_date": "2024-01-25",
+      "claim_amount": 13108.76,
+      "claim_type": "Wind",
+      "status": "Open"
+    },
+    {
+      "claim_id": 32,
+      "policy_id": 17,
+      "claim_date": "2024-02-08",
+      "claim_amount": 18528.96,
+      "claim_type": "Roof",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 33,
+      "policy_id": 20,
+      "claim_date": "2024-10-04",
+      "claim_amount": 33337.68,
+      "claim_type": "Roof",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 34,
+      "policy_id": 17,
+      "claim_date": "2024-09-25",
+      "claim_amount": 33511.2,
+      "claim_type": "Fire",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 35,
+      "policy_id": 23,
+      "claim_date": "2024-08-28",
+      "claim_amount": 27943.42,
+      "claim_type": "Water",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 36,
+      "policy_id": 22,
+      "claim_date": "2025-02-15",
+      "claim_amount": 34027.24,
+      "claim_type": "Water",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 37,
+      "policy_id": 13,
+      "claim_date": "2023-01-01",
+      "claim_amount": 15541.81,
+      "claim_type": "Water",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 38,
+      "policy_id": 26,
+      "claim_date": "2024-10-21",
+      "claim_amount": 23516.92,
+      "claim_type": "Wind",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 39,
+      "policy_id": 17,
+      "claim_date": "2025-08-27",
+      "claim_amount": 39789.9,
+      "claim_type": "Water",
+      "status": "Open"
+    },
+    {
+      "claim_id": 40,
+      "policy_id": 10,
+      "claim_date": "2025-11-21",
+      "claim_amount": 33360.76,
+      "claim_type": "Theft",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 41,
+      "policy_id": 3,
+      "claim_date": "2024-04-26",
+      "claim_amount": 33803.39,
+      "claim_type": "Water",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 42,
+      "policy_id": 5,
+      "claim_date": "2023-02-20",
+      "claim_amount": 2787.58,
+      "claim_type": "Wind",
+      "status": "Open"
+    },
+    {
+      "claim_id": 43,
+      "policy_id": 15,
+      "claim_date": "2025-04-28",
+      "claim_amount": 44363.78,
+      "claim_type": "Theft",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 44,
+      "policy_id": 23,
+      "claim_date": "2025-02-25",
+      "claim_amount": 24971.67,
+      "claim_type": "Water",
+      "status": "Approved"
+    },
+    {
+      "claim_id": 45,
+      "policy_id": 21,
+      "claim_date": "2023-01-12",
+      "claim_amount": 44686.66,
+      "claim_type": "Roof",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 46,
+      "policy_id": 8,
+      "claim_date": "2023-12-27",
+      "claim_amount": 40303.44,
+      "claim_type": "Theft",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 47,
+      "policy_id": 2,
+      "claim_date": "2024-05-25",
+      "claim_amount": 45914.77,
+      "claim_type": "Roof",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 48,
+      "policy_id": 5,
+      "claim_date": "2025-08-09",
+      "claim_amount": 33545.1,
+      "claim_type": "Theft",
+      "status": "Denied"
+    },
+    {
+      "claim_id": 49,
+      "policy_id": 25,
+      "claim_date": "2025-06-25",
+      "claim_amount": 30826.29,
+      "claim_type": "Theft",
+      "status": "Paid"
+    },
+    {
+      "claim_id": 50,
+      "policy_id": 27,
+      "claim_date": "2025-07-02",
+      "claim_amount": 44911.8,
+      "claim_type": "Wind",
+      "status": "Paid"
+    }
+  ],
+  "expected": {
+    "q1": {
+      "columns": [
+        "claim_id",
+        "claim_amount",
+        "claim_type"
+      ],
+      "rows": [
+        [
+          16,
+          47280.02,
+          "Water"
+        ],
+        [
+          13,
+          41552.73,
+          "Roof"
+        ],
+        [
+          39,
+          39789.9,
+          "Water"
+        ],
+        [
+          1,
+          29156.49,
+          "Roof"
+        ],
+        [
+          15,
+          27808.18,
+          "Wind"
+        ],
+        [
+          4,
+          23132.62,
+          "Roof"
+        ],
+        [
+          30,
+          22101.5,
+          "Theft"
+        ],
+        [
+          26,
+          20224.07,
+          "Fire"
+        ],
+        [
+          31,
+          13108.76,
+          "Wind"
+        ],
+        [
+          12,
+          12930.5,
+          "Roof"
+        ]
+      ]
+    },
+    "q2": {
+      "columns": [
+        "state",
+        "property_count",
+        "total_claim_amount"
+      ],
+      "rows": [
+        [
+          "FL",
+          8,
+          381880.43
+        ],
+        [
+          "CO",
+          6,
+          378288.77
+        ],
+        [
+          "CA",
+          8,
+          320139.72
+        ],
+        [
+          "TX",
+          6,
+          304327.29
+        ],
+        [
+          "NY",
+          2,
+          86239.39000000001
+        ]
+      ]
+    },
+    "q3": {
+      "columns": [
+        "property_id",
+        "address",
+        "state",
+        "year_built",
+        "roof_age_years",
+        "square_feet"
+      ],
+      "rows": [
+        [
+          2,
+          "9035 Oak St, Los Angeles",
+          "CA",
+          1995,
+          28,
+          930
+        ],
+        [
+          3,
+          "1635 Cedar Blvd, Los Angeles",
+          "CA",
+          1949,
+          33,
+          3265
+        ],
+        [
+          4,
+          "9295 Cedar Blvd, Los Angeles",
+          "CA",
+          2011,
+          35,
+          2518
+        ],
+        [
+          9,
+          "6301 Oak St, Los Angeles",
+          "CA",
+          1990,
+          19,
+          4197
+        ],
+        [
+          24,
+          "8897 Elm Way, Los Angeles",
+          "CA",
+          2018,
+          22,
+          1256
+        ],
+        [
+          29,
+          "1932 Birch Ct, Los Angeles",
+          "CA",
+          1959,
+          16,
+          1037
+        ]
+      ]
+    },
+    "q4": {
+      "columns": [
+        "policy_id",
+        "loss_ratio"
+      ],
+      "rows": [
+        [
+          27,
+          98.54739805804455
+        ],
+        [
+          21,
+          73.96935362129894
+        ],
+        [
+          22,
+          69.23125620434051
+        ],
+        [
+          10,
+          64.82334619332461
+        ],
+        [
+          17,
+          58.62534486135594
+        ],
+        [
+          26,
+          52.893036420785954
+        ],
+        [
+          4,
+          49.05106333406682
+        ],
+        [
+          15,
+          47.70215047416677
+        ],
+        [
+          24,
+          46.958992679766034
+        ],
+        [
+          9,
+          45.42007340842931
+        ],
+        [
+          5,
+          43.14165840707171
+        ],
+        [
+          20,
+          30.520005607632438
+        ],
+        [
+          28,
+          23.256894528186574
+        ],
+        [
+          25,
+          21.589286030884885
+        ],
+        [
+          30,
+          20.554651778408818
+        ],
+        [
+          23,
+          17.830456787793832
+        ],
+        [
+          8,
+          17.097651924912505
+        ],
+        [
+          7,
+          16.601952809578773
+        ],
+        [
+          2,
+          15.92565216938888
+        ],
+        [
+          3,
+          15.836604185503932
+        ],
+        [
+          11,
+          13.396913079477121
+        ],
+        [
+          13,
+          12.734945060806485
+        ],
+        [
+          1,
+          10.255873627627475
+        ],
+        [
+          12,
+          8.749049941413054
+        ],
+        [
+          14,
+          5.984324776703056
+        ],
+        [
+          6,
+          1.7792090025940432
+        ]
+      ]
+    }
+  }
+}

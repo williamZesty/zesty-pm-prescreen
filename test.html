@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zesty.ai — Screening Test</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- CodeMirror 5 from CDN. CM6 was the original suggestion but requires
+       careful peer-dep pinning via esm.sh; CM5 ships pre-bundled and
+       satisfies the no-build constraint cleanly. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/sql/sql.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+</head>
+<body class="page-test">
+  <header class="header header-test">
+    <div class="header-left">
+      <img src="logo.png" alt="Zesty.ai" class="logo logo-small" onerror="this.style.display='none'" />
+      <span class="brand">Zesty.ai — Screening</span>
+    </div>
+    <div class="header-center">
+      <span class="candidate-label">Candidate:</span>
+      <span id="candidate-name" class="candidate-name"></span>
+    </div>
+    <div class="header-right">
+      <span id="py-status" class="py-status">Python loading…</span>
+      <span class="timer-label">Time left:</span>
+      <span id="timer" class="timer">20:00</span>
+    </div>
+  </header>
+
+  <main class="test-grid">
+    <aside class="sidebar">
+      <h3>Questions</h3>
+      <ul id="question-list" class="question-list"></ul>
+      <h3>Schema</h3>
+      <pre id="schema-reference" class="schema-reference"></pre>
+    </aside>
+
+    <section class="main-panel">
+      <div class="panel-header">
+        <h2 id="question-title"></h2>
+      </div>
+      <div id="question-prompt" class="prompt"></div>
+
+      <div class="editor-wrapper">
+        <div id="editor-host" class="editor-host"></div>
+      </div>
+
+      <div class="run-row">
+        <button id="run-btn" class="btn btn-primary">Run</button>
+        <span class="run-hint">Run as many times as you like.</span>
+      </div>
+
+      <div class="output-section">
+        <h3>Output</h3>
+        <div id="result-area" class="result-area">
+          <p class="placeholder">Click Run to execute your code.</p>
+        </div>
+        <div id="verdict" class="verdict-area"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-test">
+    <button id="submit-btn" class="btn btn-submit">Submit Test</button>
+    <span class="footer-hint">You can submit at any time. The test auto-submits when the timer hits 0.</span>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
