@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zesty.ai — PM Candidate Screening</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-landing">
+  <header class="header">
+    <img src="logo.png" alt="Zesty.ai" class="logo" onerror="this.style.display='none'" />
+    <h1>Zesty.ai — PM Candidate Screening</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Welcome</h2>
+      <p>
+        This screen takes about <strong>20 minutes</strong>. You'll answer
+        <strong>4 questions</strong> — 2 SQL, 2 Python (with pandas).
+      </p>
+      <p>
+        You may use any reference materials, including LLMs. We log paste
+        events and tab switches as part of standard candidate evaluation.
+      </p>
+      <ul class="bullets">
+        <li>Code is executed in your browser — no setup needed.</li>
+        <li>You can run your code as many times as you want; only your last submitted state counts.</li>
+        <li>The timer starts when you click <strong>Start Test</strong> and you can't pause it.</li>
+      </ul>
+
+      <form id="start-form" class="start-form" novalidate>
+        <label>
+          Full name
+          <input type="text" id="full-name" name="full-name" required autocomplete="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </label>
+        <button type="submit" id="start-btn" disabled>Start Test</button>
+        <p id="form-error" class="form-error" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Zesty.ai · automated screening</small>
+  </footer>
+
+  <script>
+    (function () {
+      const nameEl = document.getElementById("full-name");
+      const emailEl = document.getElementById("email");
+      const btn = document.getElementById("start-btn");
+      const form = document.getElementById("start-form");
+      const errEl = document.getElementById("form-error");
+
+      function validEmail(s) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+      }
+
+      function check() {
+        const ok = nameEl.value.trim().length >= 2 && validEmail(emailEl.value.trim());
+        btn.disabled = !ok;
+      }
+      nameEl.addEventListener("input", check);
+      emailEl.addEventListener("input", check);
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const name = nameEl.value.trim();
+        const email = emailEl.value.trim();
+        if (!name || !validEmail(email)) {
+          errEl.textContent = "Please enter a valid name and email.";
+          return;
+        }
+        sessionStorage.setItem("candidate_name", name);
+        sessionStorage.setItem("candidate_email", email);
+        window.location.href = "test.html";
+      });
+    })();
+  </script>
+</body>
+</html>
