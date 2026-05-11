@@ -123,6 +123,8 @@ a { color: var(--primary-light); }
   box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
 }
 .form-error { color: var(--fail); margin: 0; min-height: 1.2em; }
+.form-info  { color: var(--primary-dark); margin: 0; min-height: 1.2em; }
+.field-hint { display: block; color: var(--text-muted); font-weight: 400; font-size: 0.8rem; margin-top: 2px; }
 
 .btn {
   font-family: inherit;

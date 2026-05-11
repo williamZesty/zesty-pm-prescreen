@@ -27,9 +27,15 @@
         <li>Code is executed in your browser — no setup needed.</li>
         <li>You can run your code as many times as you want; only your last submitted state counts.</li>
         <li>The timer starts when you click <strong>Start Test</strong> and you can't pause it.</li>
+        <li>Your access key allows up to <strong>3 attempts</strong> total — please enter your real email the first time.</li>
       </ul>
 
       <form id="start-form" class="start-form" novalidate>
+        <label>
+          Access key
+          <input type="text" id="access-key" name="access-key" required autocomplete="off" placeholder="e.g. ZESTY-2026-001" />
+          <small class="field-hint">The Zesty team emailed you this code.</small>
+        </label>
         <label>
           Full name
           <input type="text" id="full-name" name="full-name" required autocomplete="name" />
@@ -40,6 +46,7 @@
         </label>
         <button type="submit" id="start-btn" disabled>Start Test</button>
         <p id="form-error" class="form-error" aria-live="polite"></p>
+        <p id="form-info" class="form-info" aria-live="polite"></p>
       </form>
     </section>
   </main>
@@ -48,38 +55,83 @@
     <small>Zesty.ai · automated screening</small>
   </footer>
 
-  <script>
-    (function () {
-      const nameEl = document.getElementById("full-name");
-      const emailEl = document.getElementById("email");
-      const btn = document.getElementById("start-btn");
-      const form = document.getElementById("start-form");
-      const errEl = document.getElementById("form-error");
+  <script type="module">
+    import { validateAccessKey } from "./js/access.js";
 
-      function validEmail(s) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+    const keyEl = document.getElementById("access-key");
+    const nameEl = document.getElementById("full-name");
+    const emailEl = document.getElementById("email");
+    const btn = document.getElementById("start-btn");
+    const form = document.getElementById("start-form");
+    const errEl = document.getElementById("form-error");
+    const infoEl = document.getElementById("form-info");
+
+    const validEmail = (s) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+
+    function check() {
+      const ok =
+        keyEl.value.trim().length >= 1 &&
+        nameEl.value.trim().length >= 2 &&
+        validEmail(emailEl.value.trim());
+      btn.disabled = !ok;
+    }
+    keyEl.addEventListener("input", check);
+    nameEl.addEventListener("input", check);
+    emailEl.addEventListener("input", check);
+
+    function setBusy(busy) {
+      btn.disabled = busy;
+      btn.textContent = busy ? "Validating…" : "Start Test";
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      errEl.textContent = "";
+      infoEl.textContent = "";
+
+      const key = keyEl.value.trim();
+      const name = nameEl.value.trim();
+      const email = emailEl.value.trim();
+      if (!key || !name || !validEmail(email)) {
+        errEl.textContent = "Please fill in all fields with a valid email.";
+        return;
       }
 
-      function check() {
-        const ok = nameEl.value.trim().length >= 2 && validEmail(emailEl.value.trim());
-        btn.disabled = !ok;
-      }
-      nameEl.addEventListener("input", check);
-      emailEl.addEventListener("input", check);
+      setBusy(true);
+      const result = await validateAccessKey({ key, name, email });
+      setBusy(false);
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const name = nameEl.value.trim();
-        const email = emailEl.value.trim();
-        if (!name || !validEmail(email)) {
-          errEl.textContent = "Please enter a valid name and email.";
-          return;
+      if (!result.ok) {
+        if (result.error === "invalid_key") {
+          errEl.textContent =
+            "We don't recognize that access key. Double-check the code you were sent, or contact the Zesty team.";
+        } else if (result.error === "max_uses_reached") {
+          errEl.textContent =
+            "This access key has been used the maximum number of times. Please contact the Zesty team for a new key.";
+        } else {
+          errEl.textContent =
+            "We couldn't reach the validation service. Please check your connection and try again.";
         }
-        sessionStorage.setItem("candidate_name", name);
-        sessionStorage.setItem("candidate_email", email);
-        window.location.href = "test.html";
-      });
-    })();
+        return;
+      }
+
+      sessionStorage.setItem("candidate_name", name);
+      sessionStorage.setItem("candidate_email", email);
+      sessionStorage.setItem("access_key", key);
+      sessionStorage.setItem("access_uses", String(result.uses ?? 1));
+      sessionStorage.setItem("access_max_uses", String(result.max_uses ?? 3));
+
+      // For attempts 2+ of N, flag the candidate before navigating. Skipped
+      // in bypass mode where the values are placeholder defaults.
+      if (!result._bypassed && result.uses > 1) {
+        const proceed = window.confirm(
+          `Heads up — this is attempt ${result.uses} of ${result.max_uses} on this access key.\n\nMake sure your name and email are correct before continuing.`
+        );
+        if (!proceed) return;
+      }
+
+      window.location.href = "test.html";
+    });
   </script>
 </body>
 </html>

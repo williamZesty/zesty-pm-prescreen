@@ -78,9 +78,10 @@ class App {
     this.candidate = {
       name: sessionStorage.getItem("candidate_name") || "",
       email: sessionStorage.getItem("candidate_email") || "",
+      access_key: sessionStorage.getItem("access_key") || "",
     };
-    if (!this.candidate.name || !this.candidate.email) {
-      // No candidate info — kick back to landing.
+    if (!this.candidate.name || !this.candidate.email || !this.candidate.access_key) {
+      // No candidate info / unvalidated key — kick back to landing.
       window.location.replace("index.html");
       return;
     }
@@ -251,9 +252,8 @@ class App {
         }
         if (out.hasResult) {
           html += `<h4>result</h4>`;
-          html += `<p class="result-note">DataFrame with ${out.resultRowCount} row${out.resultRowCount === 1 ? "" : "s"}, columns: ${
-            out.resultColumns ? out.resultColumns.join(", ") : "n/a"
-          }</p>`;
+          const colsStr = out.resultColumns ? out.resultColumns.map(escapeHtml).join(", ") : "n/a";
+          html += `<p class="result-note">DataFrame with ${out.resultRowCount} row${out.resultRowCount === 1 ? "" : "s"}, columns: ${colsStr}</p>`;
           html += `<pre class="result-preview">${escapeHtml(out.resultPreview || "")}</pre>`;
         } else {
           html += `<p class="result-note">No <code>result</code> variable was assigned.</p>`;
@@ -324,6 +324,7 @@ class App {
     const payload = {
       candidate_name: this.candidate.name,
       candidate_email: this.candidate.email,
+      access_key: this.candidate.access_key,
       ...partial,
     };
 
@@ -335,6 +336,9 @@ class App {
 
     sessionStorage.removeItem("candidate_name");
     sessionStorage.removeItem("candidate_email");
+    sessionStorage.removeItem("access_key");
+    sessionStorage.removeItem("access_uses");
+    sessionStorage.removeItem("access_max_uses");
     window.location.replace("done.html");
   }
 }
